@@ -1,0 +1,116 @@
+/* text-align: left\right\center\justify\initial\inherit; 
+vertical-align: baseline\length\sub\super\
+                top\text-top\middle\bottom\
+                text-bottom\initial\inherit
+line-height: normal\number\length\initial\inherit;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* El colapso de márgenes ocurre cuando el margen top y bottom de 2 elementos colindan y el margen final es el que sea mayor. Es decir, si un elemento tiene margin-bottom: 20px y el otro elemento margin-top: 10px, el margen final entre ambos elementos no será de 30px, si no que será de solo 20px.
+Cabe aclarar que esto ocurre cuando usamos el display por defecto block. */
+.wrapper {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 5px;
+font-family: 'Lato', sans-serif;
+width: 550px;
+}
+
+.container {
+background: turquoise;
+width: 180px;
+height: 180px;
+}
+
+.element {
+width: 60px;
+height: 60px;
+text-align: center;
+padding-top: 10px;
+box-sizing: border-box;
+}
+
+.container1 {
+text-align: left;
+line-height: 180px ;
+/* es el espacio entre las letras, de modo que las letras se vayan hasta abajo y si ponemos 
+el tamano del contenedor lo ubicaremos justamente a la mitad*/
+}
+
+.element1 {
+background: papayawhip;
+display: inline-block;
+line-height:33px ;
+/* ponemos el line-height solo al contenido que estara adentro es decir le decimos el espacio que va a tener  una vez dentro del contenedor es decir si le ponemos 0 no tendra ningun margen  */
+vertical-align: top;
+/* esto para se nos alinie justamente en el top */
+}
+
+.element2 {
+background: papayawhip;
+display: inline-block;
+line-height:20px ;
+vertical-align:middle ;
+}
+
+.element3 {
+background: papayawhip;
+display: inline-block;
+line-height:20px ;
+vertical-align: bottom;
+}
+
+.container2 {
+text-align: center;
+line-height: 180px;
+/* se pone el tamano del contenedor, es muy importante para que se alinie la letra y el text-align center nos alinia todo en el lugar que queremos  */
+}
+
+.element4 {
+background: pink;
+display: inline-block;
+line-height: 20px ;
+vertical-align: top;
+}
+
+.element5 {
+background: pink;
+display: inline-block;
+line-height:20px ;
+/* alinia el texto justo dentro del contenedor  */
+vertical-align:middle ;
+/* le decimos que posicion tiene que tomar */
+}
+
+.element6 {
+background: pink;
+display: inline-block;
+line-height: 20px;
+vertical-align: bottom;
+}
+
+.container3 {
+text-align: right;
+line-height: 180px;
+}
+
+.element7 {
+background: lightcyan;
+display: inline-block;
+line-height: 20px;
+vertical-align: top;
+}
+
+.element8 {
+background: lightcyan;
+display: inline-block;
+line-height:20px ;
+vertical-align: middle;
+}
+
+.element9 {
+background: lightcyan;
+display: inline-block;
+line-height:20px ;
+vertical-align: bottom;
+}

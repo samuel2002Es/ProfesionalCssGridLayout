@@ -1,0 +1,29 @@
+.card{
+    background: #ffdada;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Por cierto, la propiedad overflow: hidden; sirve para ocultar cualqueir elemento hijo que se salga del elemento padre (siempre y cuando el elemento padre tenga dicha propiedad). Por ejemplo, si tu elemento padre tiene una altura de 500px, pero dentro tienes un texto que rebasa esos 500px, con un overflow: hidden; en el padre puedes hacer que se oculte todo lo que se salga  */
+    direction: ltr;
+    /* 
+    DIRECTION:
+        rlt
+        ltr */
+    writing-mode: horizontal-tb;
+    /* 
+    WRITING-MODE:
+        horizontal-tb
+        vertical-lr
+        veertical-rl
+        sideways-lr
+        sideways-rl */
+}
+.card__header{
+    background: #dbf6e9;
+    padding: 20px;
+}
+.card__main{
+    background: #9ddfd3;
+    padding: 20px;
+}

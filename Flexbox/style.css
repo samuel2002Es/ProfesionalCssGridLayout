@@ -1,0 +1,97 @@
+/* 
+FLEEXBOX:
+    display: flex
+    justify-content
+    align-items
+ */
+/* Quiero aportar que justify-content y align-items no se enfocan en posicionamiento horizontal y vertical respectivamente, ya que esto va a depender de la dirección que le demos. justify-content se enfoca en el eje principal y align-items se enfoca en el eje secundario.
+Cuando hacemos un display:flex; la dirección por defecto es row, por lo que nuestro eje principal es el eje horizontal y nuestro eje secundario es el vertical. Cuando cambiamos la dirección a column nuestro eje principal es el vertical y nuestro eje secundario es el horizontal. */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.wrapper {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 5px;
+font-family: 'Lato', sans-serif;
+width: 550px;
+}
+
+.container {
+background: turquoise;
+width: 180px;
+height: 180px;
+}
+
+.element {
+width: 60px;
+height: 60px;
+text-align: center;
+padding-top: 10px;
+box-sizing: border-box;
+}
+
+.element1 {
+background: papayawhip;
+}
+
+.element2 {
+background: pink;
+}
+
+.element3 {
+background: lightcyan;
+}
+
+.container1 {
+display: flex;
+justify-content: flex-start;
+align-items: flex-start ;
+}
+
+.container2 {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+.container3 {
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+}
+
+.container4 {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+
+.container5 {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container6 {
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+.container7 {
+display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+}
+
+.container8 {
+display: flex;
+justify-content:flex-end ;
+align-items: center;
+}
+
+.container9 {
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+}
