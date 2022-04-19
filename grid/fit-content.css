@@ -1,0 +1,20 @@
+.container {
+    display: grid;
+    grid-template-columns: fit-content(300px) fit-content(300px) 1fr;
+    /* fit content trabaja como el maximo tama;o a tener, sin tener un minimo */
+    grid-gap: 5px;
+    box-sizing: border-box;
+    height: 200px;
+    width: 100%;
+    background-color: #8cffa0;
+    padding: 10px;
+  }
+  
+.container > div {
+    background-color: #8ca0ff;
+    padding: 5px;
+  }
+
+  /* auto fill rellena con mas columnas y hace huecos vacios
+  en cambio el capo de auto-fit no lo hace sino quee hace mas grande los items */
+/* grid-template-columns: repeat(autofit, minmax(100px,1fr)); */

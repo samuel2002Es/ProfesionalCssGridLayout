@@ -15,4 +15,38 @@
         "main     main     .              sidebar sidebar"
         "main     main     .              sidebar sidebar"
         "footer  footer   footer   footer   footer";
+        
 }
+
+/* alinear elmentos hijos */
+/* contamos con dos grupos de alineacion que corresponden a: */
+/* Alinear lo que esta por dentro de la grid */
+/* Estos pueden tomar el valor de start end center stretch */
+/* Tanto en justyfi-items como aling-items tienen las mismas propiedades solo que uno horizontal justify y place vertical */
+/* place-items: <aling-items> / <justify-items>;
+es la mescla entre los dos */
+/* justify-items
+    align-items
+    place-items */
+
+    /* alinear la grid en su contenedor */
+    /* se divide en start end center stretch */
+    /* su segunca parte es space-around space-between space-evenly */
+/*justify-content
+    aling-content
+    place-content  */
+
+    /* grid implicita, quiere decir que crea filas o columnas si las necesitas con anchos sin size */
+    /* grid-auto-flow
+        grid-auto-columns */
+
+    /* minmax */
+    /* grid template-columns: repeat(3,minmaz(200px,300px)) */
+    /* el primer valor es el size minimo y el otro  es el maximo */
+
+    /* seudoclases 
+    si por ejemplo  tengo una clase y solo quiero hacer un cambio a un hijo de esa clase siendo que tengo mas
+    escribo .item:nth-child((1) siendo 1 el primer elemento
+    si quiero todos excepto el primero escribo 
+    .item:not(:nth-child(1))*/
+    /* place-self aling-self / justify-self  */
